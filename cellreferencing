@@ -1,0 +1,27 @@
+Sub cellreferencing()
+
+'callreference method1
+[a1].Value = "Region"
+[b1].Value = "Rep"
+[c1].Value = "Item"
+[d1].Value = "Units"
+
+'method2
+[e1:e20] = 20
+
+'method3
+Cells(22, 6).Value = 30
+
+'method4
+ActiveCell.Value = "Tutorial"
+
+'coping cell values from col to row or cell to cell
+
+Range("a13:a20") = Range("a2:a12").Value
+
+Range("b13:b20") = Range("b2:b12").Value
+
+Range("c13:c20") = Range("c2:c12").Value
+
+
+End Sub
